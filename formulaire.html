@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire d'enregistrement</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <form id="registrationForm" action="#" method="post">
+      <div class="titre">
+        <h2>Signup</h2>
+      </div>
+      <div class="form-group">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="mot_de_passe">Mot de passe :</label>
+        <input type="password" id="mot_de_passe" name="mot_de_passe" required>
+      </div>
+      <div class="form-group">
+        <label for="confirmation_mot_de_passe">Confirmer le mot de passe :</label>
+        <input type="password" id="confirmation_mot_de_passe" name="confirmation_mot_de_passe" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="S'inscrire">
+      </div>
+    </form>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('registrationForm');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const nom = document.getElementById('nom').value;
+    const email = document.getElementById('email').value;
+    const motDePasse = document.getElementById('mot_de_passe').value;
+    const confirmationMotDePasse = document.getElementById('confirmation_mot_de_passe').value;
+
+    // Validation basique du mot de passe
+    if (motDePasse !== confirmationMotDePasse) {
+      alert("Les mots de passe ne correspondent pas.");
+      return;
+    }
+
+    // Validation d'autres critères si nécessaire
+
+    // Si toutes les validations sont passées, soumettre le formulaire
+    // Ici, vous pouvez ajouter la logique pour envoyer les données au serveur
+    // form.submit(); // Décommentez cette ligne pour soumettre le formulaire
+
+    console.log("Nom:", nom);
+    console.log("Email:", email);
+    console.log("Mot de passe:", motDePasse);
+    console.log("Confirmation du mot de passe:", confirmationMotDePasse);
+  });
+});
+
+  </script>
+</body>
+</html>

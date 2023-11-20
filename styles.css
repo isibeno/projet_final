@@ -1,128 +1,63 @@
-*{
-    padding: 0;
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    box-sizing: border-box;
-    font-family: century ;
-  }
-  
-  body{
+    padding: 0;
+    display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-color: #334d50;
-
-  }
-  
-  header{
     height: 100vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    text-decoration: aliceblue;
-  }
-  
-  ul{
-    list-style: none;
-    margin: 2px 1em 0 auto;
-    margin-left: end;
-    padding: 10px;
-    display: flex;
-  }
-  
-  ul li a{
-    text-decoration: none;
-    color: #f5f1f1;
-    padding: 10px 10px ;
-    text-transform: uppercase;
-    border: 1px solid transparent;
-    margin: 10px;
-    font-weight: 500;
-    transition:0.6 ease ;
-  }
-  
-  ul li a:hover{
-    background: #fc1e1e;
-    color: rgb(107, 104, 103);
-  }
-  
-  li a{
-    display: row;
-    width: 60px;
-    color: #fff;
-    padding: 10px;
-  }
-  
-  .logo a{
-      padding: opx 20px;
-      border: none;
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      text-transform: uppercase;
-      text-decoration: none; 
-      font-weight: 900;
-      text-shadow: rgba(0 ,0 ,0 ,0.7);
-      width: 100px;
-      height: 50px;
-      color: rgb(241, 238, 238);
-  }
-  
-  .petit{
-      list-style: none;
-      float: right;
-      margin-top: 20px;
-  }
-  
-  .petit a:hover{
-      background-color: gold;
-  }
-  
-  a span{
-   color: orangered ;
-  }
-  
-  .b{
-    text-decoration: #fff;
-  
+    background-color: #334d50;
   }
   
   .titre{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .titre p{
-    color: rgb(165, 105, 83);
-    font-size: 30px;
-  }
-  
-  .bouton{
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
-  }
-  
-  .bouton a{
-    color: black;
-    text-decoration: none;
-    border: 1px solid #000;
-    padding: 10px 20px;
-  }
-  
-  .btn{
-    transition: 00.6s ease;
-  }
-  
-  .btn:hover{
-    background-color:#fff ;
-    color:#000;
-    -moz-column-rule-color: #f5f1f1;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
+  .container {
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #334d50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #334d50;
+  }
   
